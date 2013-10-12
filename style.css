@@ -1,0 +1,73 @@
+body {
+    margin-top: 2em;
+    background: #ECF0F1;
+}
+
+#form {
+    width: 20em;
+    background: white;
+    padding: 2em;
+    border-radius: .3em;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Holtwood One SC', serif;
+    font-size:2.6em;
+    letter-spacing: -.02em;
+    color: #3C5874;
+    text-align: center;
+    padding-bottom: .09em;
+    margin: 0;
+}
+
+textarea, input { 
+  outline: none; 
+}
+
+.list-content {
+    background: #e2e2e2;
+    border: none;
+    color: #A9A9A9;
+    border-radius: 1em;
+    padding: 1.1em;
+    width: 56%;
+    margin-right: .3em;
+}
+
+.button {
+    border: 1em solid #3498DB;
+    border-radius: 1em;
+    background: #3498DB;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #30D68A;
+    border: 1em solid #30D68A;
+}
+
+.list {
+    width: 24em;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.item {
+    border: .1em solid #e2e2e2;
+    background: white;
+    color: #A9A9A9;
+    padding: 1em;
+    border-radius: .3em;
+    margin: 1em 0;
+    font-family: arial, helvetica;
+}
+
+.item:hover {
+    background:#E82C0C url('http://i.imgbox.com/abywaQfh.png') 95% 1em no-repeat;
+    border-color: #E82C0C;
+    color: #FFF;
+    transition: background-color .3s;
+    cursor: pointer;
+}
