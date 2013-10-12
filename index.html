@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <link rel="stylesheet" href="style.css" />
-        <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
-		<title></title>
-	</head>
-	<body>
-     <h1>To-do List</h1>
-     <div id="form">
-     <input type="text" placeholder="Enter a task" class="list-content" name="checkListItem"/>
-     <input type="submit" class="button" />
-     </div>
-     <div class="list"></div>
-     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-     <script>
-     $(document).ready(function() {
+<head>
+    <link href="style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel=
+    'stylesheet' type='text/css'>
+
+    <title></title>
+</head>
+<body>
+    <h1>To-do List</h1>
+    <div id="form">
+        <input class="list-content" name="checkListItem" placeholder=
+        "Enter a task" type="text"> <input class="button" type="submit">
+    </div>
+    <div class="list"></div><script src=
+    "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <script>
+ $(document).ready(function() {
             $(".button").click(function() {
                 var toAdd = $("input[name=checkListItem]").val();
-                $(".list").append('<div class="item">' + toAdd + "</div>");
+                $(".list").append('<div class="item">' + toAdd + "<\/div>");
                 $(document).on('click', '.item', function(){
                 $(this).remove();
             });
             });
         });
-     </script>     
-	</body>
+    </script>
+</body>
 </html>
